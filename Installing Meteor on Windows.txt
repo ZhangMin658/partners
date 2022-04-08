@@ -1,0 +1,29 @@
+Installing Meteor on Windows:
+======================================
+Step 1: Install node 8.8.1
+https://nodejs.org/ru/blog/release/v8.8.1/
+
+Step 2: Install Choco using below command (run as an admin)
+
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+
+Step 3: Install Meteor 
+choco install meteor --release 1.6
+
+Step 4: Extract VS1 code and run meteor 
+
+Run :- set TOOL_NODE_FLAGS=--max-old-space-size=3300
+Run :- set NODE_TLS_REJECT_UNAUTHORIZED=0
+Run :- meteor
+
+https://sandbox.vs1cloud.com
+Username:          dene@vs1cloud.com
+Password:          Dene@123
+
+
+
+
+
+
+
+
